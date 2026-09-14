@@ -1,0 +1,30 @@
+# ── Visual Studio (локальное состояние IDE — в репозиторий не нужно) ──
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+bin/
+obj/
+
+# ── Другие редакторы ──
+.idea/
+.vscode/
+*.swp
+*~
+
+# ── Мусор ОС ──
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ── Node (если когда-нибудь появится сборка) ──
+node_modules/
+npm-debug.log*
+
+# ── Временные файлы ──
+*.log
+*.tmp
+*.bak

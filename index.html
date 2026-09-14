@@ -1,272 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andrew Zverev — Game Developer</title>
-  <meta name="description" content="Game Developer portfolio — Unity & Unreal Engine. Projects, achievements, and contact.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="assets/logo.ico" type="image/x-icon">
-  <!-- Preconnect Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Zverev — Game Developer</title>
+    <meta name="description" content="Game Developer portfolio — Unity & Unreal Engine. Projects, achievements, and contact.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
-  <!-- ════════════════════════════════════════════
-       НАВИГАЦИЯ
-       ════════════════════════════════════════════ -->
-  <nav class="navbar">
-    <div class="container">
-      <!-- Логотип — инициалы -->
-      <a href="#home" class="nav-logo">АЗ</a>
+    <!-- ════════════════════════════════════════════
+         НАВИГАЦИЯ
+         ════════════════════════════════════════════ -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Логотип — инициалы -->
+            <a href="#home" class="nav-logo">АЗ</a>
 
-      <!-- Ссылки меню -->
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home"        data-i18n="nav_home">Home</a></li>
-        <li><a href="#journey"     data-i18n="nav_journey">My Journey</a></li>
-        <li><a href="#projects"    data-i18n="nav_projects">Projects</a></li>
-        <li><a href="#gallery"     data-i18n="nav_gallery">Gallery</a></li>
-        <li><a href="#contact"     data-i18n="nav_contact">Contact</a></li>
-      </ul>
+            <!-- Ссылки меню -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#journey" data-i18n="nav_journey">My Journey</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
 
-      <div class="nav-right">
-        <!-- Переключатель языков -->
-        <div class="lang-switcher" role="group" aria-label="Language selector">
-          <button class="lang-btn active" data-lang="en">EN</button>
-          <button class="lang-btn" data-lang="ru">RU</button>
-          <button class="lang-btn" data-lang="de">DE</button>
-          <button class="lang-btn" data-lang="es">ES</button>
-          <button class="lang-btn" data-lang="pl">PL</button>
-        </div>
+            <div class="nav-right">
+                <!-- Переключатель языков -->
+                <div class="lang-switcher" role="group" aria-label="Language selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="de">DE</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="pl">PL</button>
+                </div>
 
-        <!-- Мобильное меню -->
-        <button class="burger" id="burger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ════════════════════════════════════════════
-       HERO — ГЛАВНАЯ
-       ════════════════════════════════════════════ -->
-  <section id="home">
-    <div class="hero-inner">
-      <h1 class="hero-name"    data-i18n="hero_name">Andrew Zverev</h1>
-      <p  class="hero-role"    data-i18n="hero_role">Game Developer | Unity &amp; Unreal Engine</p>
-      <p  class="hero-subtitle" data-i18n="hero_subtitle">Creating engaging game worlds and mechanics since 2018</p>
-      <a href="#projects" class="btn-primary">
-        <span data-i18n="hero_cta">View Projects</span>
-        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════
-       ОБО МНЕ
-       ════════════════════════════════════════════ -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <h2 data-i18n="about_title">About Me</h2>
-          <p data-i18n="about_text1">I am a game developer with over 5 years of experience creating unique gaming experiences.</p>
-          <p data-i18n="about_text2">My passion is creating game mechanics that bring joy to players.</p>
-          <div class="skills-tags">
-            <span class="skill-tag">Unity 6</span>
-            <span class="skill-tag">ECS/DOTS</span>
-            <span class="skill-tag">C#</span>
-            <span class="skill-tag">Game Design</span>
-            <span class="skill-tag">Kotlin/Java</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">HTML/CSS</span>
-            <span class="skill-tag">VisualStudio</span>
-            <!-- Добавляй/убирай теги навыков здесь -->
-          </div>
-        </div>
-        <div class="about-visual reveal">
-          <img src="assets/photo.jpg" alt="Andrew Zverev">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════
-       МОЙ ПУТЬ — временная шкала
-       ════════════════════════════════════════════ -->
-  <section id="journey" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-icon">📈</span>
-        <h2 class="section-title" data-i18n="journey_title">My Journey</h2>
-        <p  class="section-subtitle" data-i18n="journey_subtitle">From the first prototype to successful releases</p>
-      </div>
-
-      <div class="timeline-wrapper">
-        <!-- Карточки генерируются JavaScript'ом из i18n.js -->
-        <div class="timeline-cards" id="timeline-cards"></div>
-
-        <div class="timeline-nav">
-          <div class="timeline-track">
-            <div class="timeline-progress" id="timeline-progress" style="width:0%"></div>
-          </div>
-          <div class="timeline-dots" id="timeline-dots"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════
-       ТЕКУЩИЙ ПРОЕКТ
-       ════════════════════════════════════════════ -->
-  <section id="current" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" data-i18n="current_title">Current Project</h2>
-        <p  class="section-subtitle" data-i18n="current_subtitle">What I'm working on right now</p>
-      </div>
-
-      <div class="current-card reveal">
-        <!-- Левая колонка -->
-        <div>
-          <div class="current-badge">
-            <span>⚡</span>
-            <span data-i18n="current_badge">In Development</span>
-          </div>
-          <!-- Название проекта — возьмётся из currentProject.name в i18n.js -->
-          <h3 class="current-name" id="current-project-name">Quantum Odyssey</h3>
-          <!-- Описание — заполни в i18n.js, ключ current_desc (добавь его самостоятельно) -->
-          <p class="current-desc" id="current-project-desc">
-            <!-- Текст берётся из translations[lang].current_description в i18n.js -->
-          </p>
-
-          <div class="progress-wrap">
-            <div class="progress-label">
-              <span data-i18n="current_progress">Development progress</span>
-              <span id="progress-label-pct">65%</span>
+                <!-- Мобильное меню -->
+                <button class="burger" id="burger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
-            <div class="progress-bar">
-              <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+        </div>
+    </nav>
+
+    <!-- ════════════════════════════════════════════
+         HERO — ГЛАВНАЯ
+         ════════════════════════════════════════════ -->
+    <section id="home">
+        <div class="hero-inner">
+            <h1 class="hero-name" data-i18n="hero_name">Andrew Zverev</h1>
+            <p class="hero-role" data-i18n="hero_role">Game Developer | Unity &amp; Unreal Engine</p>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Creating engaging game worlds and mechanics since 2018</p>
+            <a href="#projects" class="btn-primary">
+                <span data-i18n="hero_cta">View Projects</span>
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         ОБО МНЕ
+         ════════════════════════════════════════════ -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h2 data-i18n="about_title">About Me</h2>
+                    <p data-i18n="about_text1">I am a game developer with over 5 years of experience creating unique gaming experiences.</p>
+                    <p data-i18n="about_text2">My passion is creating game mechanics that bring joy to players.</p>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Unity 6</span>
+                        <span class="skill-tag">ECS/DOTS</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Game Design</span>
+                        <span class="skill-tag">Kotlin/Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">VisualStudio</span>
+                        <!-- Добавляй/убирай теги навыков здесь -->
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <img src="assets/photo.jpg" alt="Andrew Zverev">
+                </div>
             </div>
-          </div>
-
-          <div class="current-tags" id="current-tags">
-            <!-- Теги генерируются из currentProject.tags в i18n.js -->
-          </div>
         </div>
+    </section>
 
-        <!-- Правая колонка — картинка из игры -->
-        <div class="current-image-wrap" id="current-image-wrap">
-          <!-- Добавь путь к картинке в currentProject.image в i18n.js -->
+    <!-- ════════════════════════════════════════════
+         МОЙ ПУТЬ — временная шкала
+         ════════════════════════════════════════════ -->
+    <section id="journey" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">📈</span>
+                <h2 class="section-title" data-i18n="journey_title">My Journey</h2>
+                <p class="section-subtitle" data-i18n="journey_subtitle">From the first prototype to successful releases</p>
+            </div>
+
+            <div class="timeline-wrapper">
+                <!-- Карточки генерируются JavaScript'ом из i18n.js -->
+                <div class="timeline-cards" id="timeline-cards"></div>
+
+                <div class="timeline-nav">
+                    <div class="timeline-track">
+                        <div class="timeline-progress" id="timeline-progress" style="width:0%"></div>
+                    </div>
+                    <div class="timeline-dots" id="timeline-dots"></div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         ТЕКУЩИЕ ПРОЕКТЫ
+         ════════════════════════════════════════════ -->
+    <section id="current" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="current_title">Current Projects</h2>
+                <p class="section-subtitle" data-i18n="current_subtitle">What I'm working on right now</p>
+            </div>
+
+            <!-- Карточки генерируются main.js → buildCurrentProjects()
+                 Тексты: translations[lang].current_projects в i18n.js
+                 Проценты/теги/картинки: currentProjects[] в i18n.js -->
+            <div class="current-stack" id="current-stack"></div>
+
+            <!-- ── Мини-блок: работа над движком ── -->
+            <div class="engine-card reveal">
+                <div class="engine-icon">🛠️</div>
+                <div class="engine-body">
+                    <span class="engine-badge" data-i18n="engine_badge">Contract work</span>
+                    <h3 class="engine-title" data-i18n="engine_title">NeoAxis Engine</h3>
+                    <p class="engine-desc" data-i18n="engine_desc">I work on the NeoAxis game engine.</p>
+                    <div class="engine-tags">
+                        <span class="engine-tag">NeoAxis</span>
+                        <span class="engine-tag">C#</span>
+                        <span class="engine-tag">.NET</span>
+                        <span class="engine-tag">macOS</span>
+                        <span class="engine-tag">Web</span>
+                        <span class="engine-tag">iOS</span>
+                    </div>
+                    <a class="engine-link" id="engine-link"
+                       href="https://www.neoaxis.com/" target="_blank" rel="noopener noreferrer"
+                       data-i18n="engine_link">About the engine →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         ЗАВЕРШЁННЫЕ ПРОЕКТЫ
+         ════════════════════════════════════════════ -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="projects_title">Completed Projects</h2>
+            </div>
+            <!-- Карточки генерируются main.js из translations[lang].projects -->
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         ДОСТИЖЕНИЯ
+         ════════════════════════════════════════════ -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🏆</span>
+                <h2 class="section-title" data-i18n="achievements_title">Achievements</h2>
+                <p class="section-subtitle" data-i18n="achievements_subtitle">Awards, competitions and milestones</p>
+            </div>
+            <!-- Карточки генерируются main.js из achievements[] в i18n.js -->
+            <div class="achievements-grid" id="achievements-grid"></div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         ГАЛЕРЕЯ РАЗРАБОТКИ
+         ════════════════════════════════════════════ -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">📷</span>
+                <h2 class="section-title" data-i18n="gallery_title">Dev Gallery</h2>
+                <p class="section-subtitle" data-i18n="gallery_subtitle">Behind the scenes — the process of creating games</p>
+            </div>
+            <!-- Карточки генерируются main.js из galleryItems[] в i18n.js -->
+            <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         ИГРЫ-ВДОХНОВИТЕЛИ
+         ════════════════════════════════════════════ -->
+    <section id="inspiration" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">💡</span>
+                <h2 class="section-title" data-i18n="inspo_title">Games That Inspired Me</h2>
+                <p class="section-subtitle" data-i18n="inspo_subtitle">Masterpieces that shaped my approach</p>
+            </div>
+            <!-- Карточки генерируются main.js из inspirations[] в i18n.js -->
+            <div class="inspo-grid" id="inspo-grid"></div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         КОНТАКТЫ
+         ════════════════════════════════════════════ -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="contact-title" data-i18n="contact_title">Get In Touch</h2>
+            <p class="contact-subtitle" data-i18n="contact_subtitle">Open to new projects and collaborations.</p>
+            <!-- Кнопки генерируются main.js из contacts{} в i18n.js -->
+            <div class="contact-links" id="contact-links"></div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         ФУТЕР
+         ════════════════════════════════════════════ -->
+    <footer>
+        <span data-i18n="footer">© 2026 Andrew Zverev. All rights reserved.</span>
+    </footer>
+
+    <!-- ════════════════════════════════════════════
+         МОДАЛЬНОЕ ОКНО (проекты + галерея)
+         ════════════════════════════════════════════ -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" role="dialog" aria-modal="true">
+            <!-- Карусель скриншотов -->
+            <div class="modal-carousel" id="modal-carousel">
+                <!-- Заполняется динамически в main.js -->
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p class="modal-text" id="modal-text"></p>
+                <div class="project-tags" id="modal-tags" style="margin-top:12px"></div>
+            </div>
+            <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+        </div>
     </div>
-  </section>
 
-  <!-- ════════════════════════════════════════════
-       ЗАВЕРШЁННЫЕ ПРОЕКТЫ
-       ════════════════════════════════════════════ -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title" data-i18n="projects_title">Completed Projects</h2>
-      </div>
-      <!-- Карточки генерируются main.js из translations[lang].projects -->
-      <div class="projects-grid" id="projects-grid"></div>
-    </div>
-  </section>
+    <!-- ════════════════════════════════════════════
+         СКРИПТЫ
+         ════════════════════════════════════════════ -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 
-  <!-- ════════════════════════════════════════════
-       ДОСТИЖЕНИЯ
-       ════════════════════════════════════════════ -->
-  <section id="achievements" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-icon">🏆</span>
-        <h2 class="section-title" data-i18n="achievements_title">Achievements</h2>
-        <p  class="section-subtitle" data-i18n="achievements_subtitle">Awards, competitions and milestones</p>
-      </div>
-      <!-- Карточки генерируются main.js из achievements[] в i18n.js -->
-      <div class="achievements-grid" id="achievements-grid"></div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════
-       ГАЛЕРЕЯ РАЗРАБОТКИ
-       ════════════════════════════════════════════ -->
-  <section id="gallery" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-icon">📷</span>
-        <h2 class="section-title" data-i18n="gallery_title">Dev Gallery</h2>
-        <p  class="section-subtitle" data-i18n="gallery_subtitle">Behind the scenes — the process of creating games</p>
-      </div>
-      <!-- Карточки генерируются main.js из galleryItems[] в i18n.js -->
-      <div class="gallery-grid" id="gallery-grid"></div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════
-       ИГРЫ-ВДОХНОВИТЕЛИ
-       ════════════════════════════════════════════ -->
-  <section id="inspiration" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-icon">💡</span>
-        <h2 class="section-title" data-i18n="inspo_title">Games That Inspired Me</h2>
-        <p  class="section-subtitle" data-i18n="inspo_subtitle">Masterpieces that shaped my approach</p>
-      </div>
-      <!-- Карточки генерируются main.js из inspirations[] в i18n.js -->
-      <div class="inspo-grid" id="inspo-grid"></div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════
-       КОНТАКТЫ
-       ════════════════════════════════════════════ -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="contact-title"    data-i18n="contact_title">Get In Touch</h2>
-      <p  class="contact-subtitle" data-i18n="contact_subtitle">Open to new projects and collaborations.</p>
-      <!-- Кнопки генерируются main.js из contacts{} в i18n.js -->
-      <div class="contact-links" id="contact-links"></div>
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════
-       ФУТЕР
-       ════════════════════════════════════════════ -->
-  <footer>
-    <span data-i18n="footer">© 2026 Andrew Zverev. All rights reserved.</span>
-  </footer>
-
-  <!-- ════════════════════════════════════════════
-       МОДАЛЬНОЕ ОКНО (проекты + галерея)
-       ════════════════════════════════════════════ -->
-  <div class="modal-overlay" id="modal-overlay">
-    <div class="modal" role="dialog" aria-modal="true">
-      <!-- Карусель скриншотов -->
-      <div class="modal-carousel" id="modal-carousel">
-        <!-- Заполняется динамически в main.js -->
-      </div>
-      <div class="modal-body">
-        <h2 class="modal-title" id="modal-title"></h2>
-        <p  class="modal-text"  id="modal-text"></p>
-        <div class="project-tags" id="modal-tags" style="margin-top:12px"></div>
-      </div>
-      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
-    </div>
-  </div>
-
-  <!-- ════════════════════════════════════════════
-       СКРИПТЫ
-       ════════════════════════════════════════════ -->
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Инициализация текущего проекта происходит в main.js → initCurrentProjectImage() -->
+    <!-- Карточки текущих проектов собираются в main.js → buildCurrentProjects() -->
 </body>
 </html>
